@@ -3,15 +3,17 @@
     "type": "library",
     "description": "A extendable php validator",
     "keywords": ["php", "validator", "valid"],
+    "homepage": "https://github.com/avaslev/validator",
     "license": "MIT",
     "authors": [
         {
             "name": "Alexey Vasilyev",
-            "email": "alex@onlam.ru"
+            "email": "alex@onlam.ru",
+            "homepage": "http://onlamp.ru"
         }
     ],
     "require": {
-        "php": "~7.0"
+        "php": "^7.1"
     },
     "autoload": {
         "psr-4": {
