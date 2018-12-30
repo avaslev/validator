@@ -11,8 +11,8 @@ use Prophecy\Exception\InvalidArgumentException;
  */
 class OpenCloseParenthesesConstrain implements ConstraintInterface
 {
-    private const PARENTHESES = '()';
-    private const OTHER_CHARS = [" ", "\n", "\t", "\r"];
+    const PARENTHESES = '()';
+    const OTHER_CHARS = [" ", "\n", "\t", "\r"];
 
     /**
      * @param $subject
