@@ -1,0 +1,29 @@
+{
+    "name": "avaslev/validator",
+    "type": "library",
+    "description": "A extendable php validator",
+    "keywords": ["php", "validator", "valid"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Vasilyev",
+            "email": "alex@onlam.ru"
+        }
+    ],
+    "require": {
+        "php": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avaslev\\Validator\\": "src"
+        }
+    },
+    "autoload-test": {
+        "psr-4": {
+            "Avaslev\\Validator\\Test\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    }
+}
