@@ -5,7 +5,6 @@ namespace Avaslev\Validator\Test\Constraint;
 
 use Avaslev\Validator\Constraint\OpenCloseParenthesesConstrain;
 use PHPUnit\Framework\TestCase;
-use Prophecy\Exception\InvalidArgumentException;
 
 /**
  * Class OpenCloseParenthesesConstrainTest
@@ -30,7 +29,7 @@ class OpenCloseParenthesesConstrainTest extends TestCase
     }
 
     /**
-     * @expectedException InvalidArgumentException
+     * @expectedException \InvalidArgumentException
      */
     public function testCanBeVerifyArray()
     {
@@ -38,7 +37,7 @@ class OpenCloseParenthesesConstrainTest extends TestCase
     }
 
     /**
-     * @expectedException InvalidArgumentException
+     * @expectedException \InvalidArgumentException
      */
     public function testCanBeVerifyBadString()
     {

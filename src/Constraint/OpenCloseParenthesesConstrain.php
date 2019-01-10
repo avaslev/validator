@@ -3,8 +3,6 @@
 namespace Avaslev\Validator\Constraint;
 
 
-use Prophecy\Exception\InvalidArgumentException;
-
 /**
  * Class OpenCloseParenthesesConstrain
  * @package Avaslev\Validator\Constraint
@@ -33,15 +31,15 @@ class OpenCloseParenthesesConstrain implements ConstraintInterface
     private function checkSubject($subject)
     {
         if (!is_string($subject)) {
-            throw new InvalidArgumentException('Not a string');
+            throw new \InvalidArgumentException('Not a string');
         }
 
         if (empty($subject)) {
-            throw new InvalidArgumentException('Empty string');
+            throw new \InvalidArgumentException('Empty string');
         }
 
         if (trim($subject, '()' . implode('', self::OTHER_CHARS)) !== '') {
-            throw new InvalidArgumentException('Invalid string');
+            throw new \InvalidArgumentException('Invalid string');
         }
     }
 
